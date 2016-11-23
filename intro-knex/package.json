@@ -1,0 +1,23 @@
+{
+  "name": "intro-knex",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "teste"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/lucastvasconcelos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/lucastvasconcelos/issues"
+  },
+  "homepage": "https://github.com/github.com/lucastvasconcelos#readme",
+  "dependencies": {
+    "knex": "^0.12.6",
+    "sqlite3": "^3.1.8"
+  }
+}
