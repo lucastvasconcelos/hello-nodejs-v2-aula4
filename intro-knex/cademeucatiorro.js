@@ -12,7 +12,7 @@ if(!process.argv[2]){
 knex("cachorros").select().where({
   nomecachorro:process.argv[2]
 }).then(function(ret){
-  console.log("id\t\tnome")
+  console.log("id\t\tnome\t\raça")
   let i = ret.length;
   while(i--){
     let dog = ret[i];
