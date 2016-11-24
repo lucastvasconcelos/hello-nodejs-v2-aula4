@@ -12,7 +12,7 @@ if(!process.argv[2]){
 knex("cachorros").insert({
   nomecachorro:process.argv[2]
 },"idcachorro").then((ret) => {
-  console.log(`cachorro ${ret[0]} inserido com a chave ${ret[0]}`);
+  console.log(`cachorroinserido com a chave ${ret[0]}`);
   process.exit(0);
 }).catch((err)=>{
   console.log(err);
