@@ -15,10 +15,8 @@ knex("cachorros").select().where({
   console.log("id\t\tnome")
   let i = ret.length;
   while(i--){
-    let conv = ret[i];
-    console.log(conv);
-    // console.log(Object.values(conv));
-    // console.log(Object.keys(conv).map(key => conv[key]));
+    let dog = ret[i];
+    console.log(dog);
   }
   process.exit(0);
 });
