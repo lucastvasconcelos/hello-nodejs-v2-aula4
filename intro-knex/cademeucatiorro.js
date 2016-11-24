@@ -12,13 +12,8 @@ if(!process.argv[2]){
 knex("cachorros").select().where({
   nomecachorro:process.argv[2]
 }).then(function(ret){
-  console.log("id\t\tnome")
-  let i = ret.length;
-  while(i--){
-    let conv = ret[i];
+  console.log("id\t\tnome\t\traça")
+    let conv = ret[0];
     console.log(conv);
-    // console.log(Object.values(conv));
-    // console.log(Object.keys(conv).map(key => conv[key]));
-  }
-  process.exit(0);
+   process.exit(0);
 });

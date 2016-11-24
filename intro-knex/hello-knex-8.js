@@ -17,9 +17,7 @@ let p = {
 knex.raw(q,p).then(() => {
   knex.raw("select * from convidado").then((ret) => {
     let i = ret.length;
-    while(i--){
-      console.log(ret[i]);
-    }
+    console.log(ret[i-1]);
     process.exit(0);
   });
 });
